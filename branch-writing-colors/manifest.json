@@ -1,0 +1,9 @@
+{
+  "id": "branch-writing-colors",
+  "name": "Branch Writing Colors",
+  "version": "1.0.0",
+  "minAppVersion": "0.15.0",
+  "description": "Color-code Branch Writing cards by emoji in headings. Cards inherit the color of their nearest emoji-tagged ancestor heading.",
+  "author": "Dewang Mistry",
+  "isDesktopOnly": true
+}

@@ -1,0 +1,9 @@
+{
+	"id": "obsidian-article-reader",
+	"name": "Article Reader",
+	"description": "Clean article reading view with text-to-speech and keyboard navigation",
+	"version": "0.1.0",
+	"author": "Dewang Mistry",
+	"minAppVersion": "1.0.0",
+	"isDesktopOnly": false
+}

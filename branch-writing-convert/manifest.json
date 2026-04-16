@@ -1,0 +1,9 @@
+{
+  "id": "branch-writing-convert",
+  "name": "Branch Writing Convert",
+  "version": "1.0.0",
+  "minAppVersion": "0.15.0",
+  "description": "Convert the active note to Branch Writing plugin format. Safe to re-run — strips existing section comments and re-numbers cleanly.",
+  "author": "Dewang Mistry",
+  "isDesktopOnly": true
+}

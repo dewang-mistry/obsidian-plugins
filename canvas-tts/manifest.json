@@ -1,0 +1,9 @@
+{
+  "id": "canvas-tts",
+  "name": "Canvas TTS",
+  "version": "1.0.0",
+  "minAppVersion": "1.1.0",
+  "description": "Speaks canvas card and edge label text aloud when selected.",
+  "author": "Dewang Mistry",
+  "isDesktopOnly": true
+}

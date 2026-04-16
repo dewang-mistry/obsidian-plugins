@@ -1,0 +1,178 @@
+/* ── Article Reader Container ── */
+
+.ar-container {
+	overflow-y: auto;
+	outline: none;
+	background: var(--background-primary);
+}
+
+.ar-article {
+	max-width: 700px;
+	margin: 0 auto;
+	padding: 2em 1.5em 4em;
+	font-family: var(--font-text);
+	color: var(--text-normal);
+}
+
+/* ── Typography ── */
+
+.ar-article h1,
+.ar-article h2,
+.ar-article h3,
+.ar-article h4,
+.ar-article h5,
+.ar-article h6 {
+	cursor: pointer;
+	border-radius: 4px;
+	padding: 2px 6px;
+	margin-left: -6px;
+	transition: background-color 0.15s ease;
+}
+
+.ar-article h1:hover,
+.ar-article h2:hover,
+.ar-article h3:hover,
+.ar-article h4:hover,
+.ar-article h5:hover,
+.ar-article h6:hover {
+	background-color: var(--background-modifier-hover);
+}
+
+.ar-article h1 { margin-top: 1.5em; }
+.ar-article h2 { margin-top: 1.3em; }
+.ar-article h3 { margin-top: 1.1em; }
+
+.ar-article p {
+	margin-bottom: 1em;
+}
+
+/* ── Navigable elements ── */
+
+.ar-sentence,
+.ar-list-item {
+	cursor: pointer;
+	border-radius: 3px;
+	padding: 1px 2px;
+	transition: background-color 0.15s ease;
+}
+
+.ar-sentence:hover,
+.ar-list-item:hover {
+	background-color: var(--background-modifier-hover);
+}
+
+/* ── Focus highlight ── */
+
+.ar-focused {
+	background-color: var(--text-highlight-bg) !important;
+	border-left: 3px solid var(--interactive-accent);
+	padding-left: 8px;
+	border-radius: 3px;
+}
+
+/* Headings get a slightly different focus style */
+h1.ar-focused,
+h2.ar-focused,
+h3.ar-focused,
+h4.ar-focused,
+h5.ar-focused,
+h6.ar-focused {
+	border-left: 4px solid var(--interactive-accent);
+	padding-left: 10px;
+}
+
+/* ── Persistent highlight (==text== written to file) ── */
+
+.ar-highlighted {
+	background-color: var(--text-highlight-bg);
+	border-radius: 2px;
+	padding: 1px 2px;
+}
+
+/* Override Obsidian's native <mark> bright yellow inside article reader */
+.ar-article mark {
+	background-color: var(--text-highlight-bg);
+	color: inherit;
+}
+
+/* ── Images & media ── */
+
+.ar-article img {
+	max-width: 100%;
+	height: auto;
+	border-radius: 6px;
+	margin: 1em 0;
+}
+
+.ar-article iframe,
+.ar-article video {
+	max-width: 100%;
+	margin: 1em 0;
+}
+
+/* ── Tables ── */
+
+.ar-article table {
+	width: 100%;
+	border-collapse: collapse;
+	margin: 1em 0;
+}
+
+.ar-article th,
+.ar-article td {
+	padding: 8px 12px;
+	border: 1px solid var(--background-modifier-border);
+	text-align: left;
+}
+
+.ar-article th {
+	background-color: var(--background-secondary);
+	font-weight: 600;
+}
+
+/* ── Lists ── */
+
+.ar-article ul,
+.ar-article ol {
+	padding-left: 1.5em;
+	margin-bottom: 1em;
+}
+
+.ar-article li {
+	margin-bottom: 0.4em;
+}
+
+/* ── Blockquotes ── */
+
+.ar-article blockquote {
+	border-left: 3px solid var(--interactive-accent);
+	padding-left: 1em;
+	margin-left: 0;
+	color: var(--text-muted);
+	font-style: italic;
+}
+
+/* ── Code blocks ── */
+
+.ar-article pre {
+	background-color: var(--background-secondary);
+	padding: 1em;
+	border-radius: 6px;
+	overflow-x: auto;
+	margin: 1em 0;
+}
+
+.ar-article code {
+	font-family: var(--font-monospace);
+	font-size: 0.9em;
+}
+
+/* ── Callouts / embeds ── */
+
+.ar-article .callout {
+	margin: 1em 0;
+}
+
+.ar-article .internal-embed {
+	margin: 1em 0;
+}

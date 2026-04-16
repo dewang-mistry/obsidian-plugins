@@ -1,0 +1,9 @@
+{
+  "id": "rss-branch-writing",
+  "name": "RSS Branch Writing",
+  "version": "0.1.0",
+  "minAppVersion": "1.0.0",
+  "description": "Generate a branch-writing note from your rss-dashboard feeds.",
+  "author": "Dewang",
+  "isDesktopOnly": false
+}

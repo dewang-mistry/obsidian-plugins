@@ -1,0 +1,9 @@
+{
+  "id": "rss-channel-view",
+  "name": "RSS Channel View",
+  "version": "0.1.0",
+  "minAppVersion": "1.0.0",
+  "description": "Render a live table of videos from rss-dashboard for the current channel note.",
+  "author": "Dewang",
+  "isDesktopOnly": false
+}
