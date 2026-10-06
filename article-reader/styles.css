@@ -1,0 +1,66 @@
+/* Article Reader — clean typography + reading focus */
+
+.article-reader { display: flex; flex-direction: column; height: 100%; }
+
+.ar-toolbar {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 6px 12px;
+  border-bottom: 1px solid var(--background-modifier-border);
+  flex: 0 0 auto;
+}
+.ar-btn {
+  font-size: 13px;
+  line-height: 1;
+  padding: 4px 8px;
+  border-radius: 6px;
+  background: transparent;
+  border: 1px solid transparent;
+  color: var(--text-muted);
+  cursor: pointer;
+  box-shadow: none;
+}
+.ar-btn:hover { background: var(--background-modifier-hover); color: var(--text-normal); }
+.ar-btn.playing { color: var(--interactive-accent); }
+.ar-pos { font-size: 12px; color: var(--text-muted); min-width: 54px; text-align: center; font-variant-numeric: tabular-nums; }
+.ar-hint {
+  margin-left: auto;
+  font-size: 11px;
+  color: var(--text-faint);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.ar-article {
+  flex: 1;
+  overflow-y: auto;
+  padding: 24px max(28px, calc((100% - 720px) / 2));
+  font-size: 1.05em;
+  line-height: 1.7;
+  outline: none;
+}
+
+/* Navigable units */
+.ar-article .ar-navigable { cursor: pointer; border-radius: 3px; transition: background-color 0.1s; }
+.ar-article .ar-sentence:hover,
+.ar-article .ar-list-item:hover,
+.ar-article .ar-cell:hover,
+.ar-article h1.ar-navigable:hover, .ar-article h2.ar-navigable:hover,
+.ar-article h3.ar-navigable:hover, .ar-article h4.ar-navigable:hover,
+.ar-article h5.ar-navigable:hover, .ar-article h6.ar-navigable:hover {
+  background-color: var(--background-modifier-hover);
+}
+.ar-article .ar-focused {
+  background-color: var(--text-highlight-bg) !important;
+  box-shadow: 0 0 0 2px var(--text-highlight-bg);
+}
+
+/* Embeds render but aren't spoken — keep them tidy */
+.ar-article img { max-width: 100%; border-radius: 6px; }
+
+/* Mobile: bigger touch targets, tighter padding */
+.is-mobile .ar-article { padding: 16px 14px; }
+.is-mobile .ar-btn { font-size: 16px; padding: 8px 12px; }
+.is-mobile .ar-hint { display: none; }

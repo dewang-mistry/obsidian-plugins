@@ -1,0 +1,9 @@
+{
+  "id": "article-reader",
+  "name": "Article Reader",
+  "version": "0.2.0",
+  "minAppVersion": "1.4.0",
+  "description": "Clean article reading view with speak-on-navigate text-to-speech: click or arrow to any sentence, heading, or list item and it reads aloud — system voices, or the Kokoro engine on the Mac mini reached over Tailscale (works on iPhone and iPad).",
+  "author": "Dewang Mistry + Claude",
+  "isDesktopOnly": false
+}
